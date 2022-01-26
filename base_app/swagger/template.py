@@ -14,7 +14,7 @@ def swagger_template(
     """
     return {
         "swagger": "2.0",
-        "comsumes": [
+        "consumes": [
             "application/json",
         ],
         "produces": [
