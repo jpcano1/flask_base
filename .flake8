@@ -21,6 +21,14 @@ ignore =
     F401, # '.app.app' imported but unused
     F403, # 'from .apps import *' used; unable to detect undefined names
     PT013, # Incorrect import of pytest, use simple 'import pytest' instead
+    D100, # Missing docstring
+    D101, # Missing docstring in public class
+    D102, # Missing docstring in public method
+    D103, # Missing docstring in public function
+    D104, # Missing docstring in public package
+    D105, # Missing docstring in magic method
+    D106, # Missing docstring in public nested class
+    D107, # Missing docstring in __init__
 per-file-ignores =
     # See https://stackoverflow.com/questions/43746413/how-do-i-get-flake8-to-work-with-f811-errors
     ./tests/payments/integration/conftest.py:F811
