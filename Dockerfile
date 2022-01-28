@@ -7,7 +7,7 @@ ENV PYTHONUNBUFFERED 1
 
 WORKDIR /app
 
-COPY requirements.txt .
+COPY requirements/requirements.txt .
 
 RUN apt-get update && \
     apt-get install -yy libpq-dev build-essential && \
