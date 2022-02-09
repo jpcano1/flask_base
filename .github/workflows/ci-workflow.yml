@@ -26,7 +26,7 @@ jobs:
           ${{ runner.os }}-pip-
           ${{ runner.os }}-
     - name: Install dependencies
-      run: pip install --progress-bar off -q -r requirements.txt -r requirements-test.txt -r requirements-dev.txt --disable-pip-version-check
+      run: find ./requirements -type f -exec pip install --disable-pip-version-check --progress-bar off -q -r {} \;
     - name: Check Types
       run: mypy . --exclude 'venv'
       if: always()
