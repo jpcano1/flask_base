@@ -46,5 +46,4 @@ disable_noqa = False
 show-source = True
 statistics = True
 max-complexity = 15
-inline-quotes = "
 show-statistics = True
